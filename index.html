@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset=utf-8 />
+	<title>Does my browser support webfonts?</title>
+	<script src="http://use.typekit.com/wfw8ohr.js"></script>
+	<script>try{Typekit.load();}catch(e){}</script>
+	<style>
+		body { background:#000;color:#fff;font-family:Helvetica, sans; }
+		#answer { text-align:center;font-size:400px; }
+	
+		.no { display:block;padding-top:60px; }
+		.yes { display:none; }
+		.wf-active .no, .wf-loading .no { display:none; }
+		.wf-active .yes { display:block;padding-bottom:60px; }
+	</style>
+</head>
+<body>
+
+	<div id="answer">
+		<span class="yes">Yes!</span>
+		<span class="no">No.</span>
+	</div>
+	
+	<!-- this has been brought to you by the good folks @ oakmade.com -->
+	
+	<script type="text/javascript">
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-1666437-20']);
+	  _gaq.push(['_trackPageview']);	
+	  (function() {
+	    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();	
+	</script>
+
+</body>
+</html>
